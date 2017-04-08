@@ -81,21 +81,21 @@
 					<label>Pi-Hole Ethernet Interface</label>
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-plug"></i></div>
-						<input type="text" class="form-control" disabled value="<?php echo $piHoleInterface; ?>">
+						<input type="text" class="form-control" readonly value="<?php echo $piHoleInterface; ?>">
 					</div>
 				</div>
 				<div class="form-group">
 					<label>Pi-Hole IPv4 address</label>
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-plug"></i></div>
-						<input type="text" class="form-control" disabled value="<?php echo $piHoleIPv4; ?>">
+						<input type="text" class="form-control" readonly value="<?php echo $piHoleIPv4; ?>">
 					</div>
 				</div>
 				<div class="form-group">
 					<label>Pi-Hole IPv6 address</label>
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-plug"></i></div>
-						<input type="text" class="form-control" disabled value="<?php echo $piHoleIPv6; ?>">
+						<input type="text" class="form-control" readonly value="<?php echo $piHoleIPv6; ?>">
 					</div>
 					<?php if (!defined('AF_INET6')){ ?><p style="color: #F00;">Warning: PHP has been compiled without IPv6 support.</p><?php } ?>
 				</div>
@@ -103,7 +103,7 @@
 					<label>Pi-Hole hostname</label>
 					<div class="input-group">
 						<div class="input-group-addon"><i class="fa fa-laptop"></i></div>
-						<input type="text" class="form-control" disabled value="<?php echo $hostname; ?>">
+						<input type="text" class="form-control" readonly value="<?php echo $hostname; ?>">
 					</div>
 				</div>
 			</div>
